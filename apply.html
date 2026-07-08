@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Apply to join the Centre for Innovation & Entrepreneurship (CIE) at MLR Institute of Technology." />
+  <meta name="theme-color" content="#07070c" />
+  <title>Join CIE — Application Form | MLR Institute of Technology</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="apply.css" />
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav scrolled" id="nav">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="CIE Home">
+        <span class="nav__logo-mark">
+          <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5b8cff"/>
+                <stop offset="100%" stop-color="#a855f7"/>
+              </linearGradient>
+            </defs>
+            <path d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z" fill="none" stroke="url(#logoGrad)" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M11 11 L11 21 M11 11 L16 16 L11 21 M18 11 L18 21" stroke="url(#logoGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">CIE</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="index.html#hero" class="nav__link">Home</a>
+        <a href="index.html#about" class="nav__link">About</a>
+        <a href="index.html#verticals" class="nav__link">Verticals</a>
+        <a href="index.html#programs" class="nav__link">Programs</a>
+        <a href="index.html#team" class="nav__link">Team</a>
+        <a href="index.html#recruitment" class="nav__link">Recruitment</a>
+        <a href="index.html#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="index.html" class="btn btn--ghost btn--sm">
+          <i data-lucide="arrow-left"></i> Back
+        </a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ APPLICATION FORM ============ -->
+  <section class="apply">
+    <div class="apply__bg" aria-hidden="true">
+      <div class="blob blob--1"></div>
+      <div class="blob blob--2"></div>
+    </div>
+
+    <div class="apply__container">
+      <div class="apply__head reveal">
+        <span class="section__eyebrow">Join CIE</span>
+        <h1 class="apply__title">Application <span class="grad-text">Form</span></h1>
+        <p class="apply__lead">
+          Take the first step toward becoming part of the Centre for Innovation &amp; Entrepreneurship.
+          Fill in your details below — we'll reach out after screening.
+        </p>
+      </div>
+
+      <form class="apply__form reveal" id="applyForm" novalidate>
+        <!-- Personal Info -->
+        <fieldset class="apply__group">
+          <legend><i data-lucide="user"></i> Personal Information</legend>
+
+          <div class="apply__row">
+            <div class="field">
+              <label for="fullName">Full Name <span class="req">*</span></label>
+              <input type="text" id="fullName" name="fullName" required placeholder="e.g. Aarav Krishna" />
+            </div>
+            <div class="field">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            </div>
+          </div>
+
+          <div class="apply__row">
+            <div class="field">
+              <label for="phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" required placeholder="+91 98765 43210" />
+            </div>
+            <div class="field">
+              <label for="rollNumber">Roll Number <span class="req">*</span></label>
+              <input type="text" id="rollNumber" name="rollNumber" required placeholder="e.g. 21BTCSXXXXX" />
+            </div>
+          </div>
+
+          <div class="apply__row">
+            <div class="field">
+              <label for="year">Year of Study <span class="req">*</span></label>
+              <select id="year" name="year" required>
+                <option value="">Select year</option>
+                <option value="1st Year">1st Year</option>
+                <option value="2nd Year">2nd Year</option>
+                <option value="3rd Year">3rd Year</option>
+                <option value="4th Year">4th Year</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="branch">Branch / Department <span class="req">*</span></label>
+              <select id="branch" name="branch" required>
+                <option value="">Select branch</option>
+                <option value="CSE">Computer Science (CSE)</option>
+                <option value="IT">Information Technology (IT)</option>
+                <option value="ECE">Electronics &amp; Communication (ECE)</option>
+                <option value="EEE">Electrical &amp; Electronics (EEE)</option>
+                <option value="MECH">Mechanical Engineering</option>
+                <option value="CIVIL">Civil Engineering</option>
+                <option value="AIML">AI &amp; ML (AIML)</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+          </div>
+        </fieldset>
+
+        <!-- Domain Selection -->
+        <fieldset class="apply__group">
+          <legend><i data-lucide="layers"></i> Domain Preference</legend>
+
+          <div class="field">
+            <label for="domain1">First Preference <span class="req">*</span></label>
+            <select id="domain1" name="domain1" required>
+              <option value="">Select your first choice</option>
+              <option value="Technical">Technical</option>
+              <option value="Design">Design</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Content">Content</option>
+              <option value="Photography">Photography</option>
+              <option value="Videography">Videography</option>
+              <option value="Operations">Operations</option>
+              <option value="Events">Events</option>
+              <option value="Startup Research">Startup Research</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="domain2">Second Preference</label>
+            <select id="domain2" name="domain2">
+              <option value="">Select your second choice (optional)</option>
+              <option value="Technical">Technical</option>
+              <option value="Design">Design</option>
+              <option value="Marketing">Marketing</option>
+              <option value="Content">Content</option>
+              <option value="Photography">Photography</option>
+              <option value="Videography">Videography</option>
+              <option value="Operations">Operations</option>
+              <option value="Events">Events</option>
+              <option value="Startup Research">Startup Research</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Experience -->
+        <fieldset class="apply__group">
+          <legend><i data-lucide="sparkles"></i> Your Journey</legend>
+
+          <div class="field">
+            <label for="skills">Relevant Skills <span class="req">*</span></label>
+            <textarea id="skills" name="skills" rows="3" required placeholder="List your relevant skills — tools, languages, frameworks, soft skills, etc."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="experience">Past Experience / Projects <span class="req">*</span></label>
+            <textarea id="experience" name="experience" rows="4" required placeholder="Tell us about any projects, internships, events, or initiatives you've been part of."></textarea>
+          </div>
+
+          <div class="field">
+            <label for="why">Why do you want to join CIE? <span class="req">*</span></label>
+            <textarea id="why" name="why" rows="4" required placeholder="What draws you to CIE? What do you hope to gain and contribute?"></textarea>
+          </div>
+
+          <div class="field">
+            <label for="links">Portfolio / Links (optional)</label>
+            <input type="text" id="links" name="links" placeholder="GitHub, LinkedIn, Behance, personal site, etc." />
+          </div>
+        </fieldset>
+
+        <!-- Availability -->
+        <fieldset class="apply__group">
+          <legend><i data-lucide="calendar-clock"></i> Availability</legend>
+
+          <div class="field">
+            <label for="availability">Hours per week you can commit <span class="req">*</span></label>
+            <select id="availability" name="availability" required>
+              <option value="">Select hours</option>
+              <option value="2-4 hours">2–4 hours</option>
+              <option value="4-6 hours">4–6 hours</option>
+              <option value="6-10 hours">6–10 hours</option>
+              <option value="10+ hours">10+ hours</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <!-- Submit -->
+        <div class="apply__submit">
+          <button type="submit" class="btn btn--primary btn--block" data-ripple>
+            <i data-lucide="send"></i> Submit Application
+          </button>
+          <p class="form__status" id="formStatus" role="status"></p>
+          <p class="apply__note">
+            <i data-lucide="info"></i>
+            Applications are reviewed weekly. We'll contact you via email for the next steps.
+          </p>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+  <script src="apply.js"></script>
+</body>
+</html>

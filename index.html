@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Centre for Innovation & Entrepreneurship (CIE) at MLR Institute of Technology — Ideate. Build. Innovate. Transforming students into innovators through startups, hackathons, mentorship, and real-world projects." />
+  <meta name="keywords" content="CIE, MLR Institute, innovation, entrepreneurship, startups, hackathons, student projects, mentorship" />
+  <meta name="author" content="CIE — MLR Institute of Technology" />
+  <meta name="theme-color" content="#0a0a0f" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="CIE — MLR Institute of Technology | Ideate. Build. Innovate." />
+  <meta property="og:description" content="The Centre for Innovation & Entrepreneurship transforming students into innovators." />
+  <meta property="og:type" content="website" />
+
+  <title>CIE — MLR Institute of Technology | Ideate. Build. Innovate.</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============ PROGRESS BAR ============ -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__logo" aria-label="CIE Home">
+        <span class="nav__logo-mark">
+          <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+            <defs>
+              <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#5b8cff"/>
+                <stop offset="100%" stop-color="#a855f7"/>
+              </linearGradient>
+            </defs>
+            <path d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z" fill="none" stroke="url(#logoGrad)" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M11 11 L11 21 M11 11 L16 16 L11 21 M18 11 L18 21" stroke="url(#logoGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+        </span>
+        <span class="nav__logo-text">CIE</span>
+      </a>
+
+      <nav class="nav__links" id="navLinks" aria-label="Primary">
+        <a href="#hero" class="nav__link">Home</a>
+        <a href="#about" class="nav__link">About</a>
+        <a href="#verticals" class="nav__link">Verticals</a>
+        <a href="#programs" class="nav__link">Programs</a>
+        <a href="#team" class="nav__link">Team</a>
+        <a href="#recruitment" class="nav__link">Recruitment</a>
+        <a href="#contact" class="nav__link">Contact</a>
+      </nav>
+
+      <div class="nav__actions">
+        <a href="apply.html" class="btn btn--primary btn--sm" data-ripple>Join CIE</a>
+        <button class="nav__toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="blob blob--1"></div>
+        <div class="blob blob--2"></div>
+        <div class="blob blob--3"></div>
+        <div class="hero__grid"></div>
+      </div>
+
+      <div class="hero__shapes" aria-hidden="true">
+        <span class="shape shape--ring" style="--d:0s"></span>
+        <span class="shape shape--tri" style="--d:1s"></span>
+        <span class="shape shape--dot" style="--d:2s"></span>
+        <span class="shape shape--sq" style="--d:1.5s"></span>
+        <span class="shape shape--ring2" style="--d:0.5s"></span>
+      </div>
+
+      <div class="container hero__content">
+        <div class="hero__badge reveal">
+          <span class="hero__badge-dot"></span>
+          Centre for Innovation &amp; Entrepreneurship
+        </div>
+
+        <h1 class="hero__title">
+          <span class="hero__word reveal" style="--d:.1s">IDEATE.</span>
+          <span class="hero__word reveal" style="--d:.2s">BUILD.</span>
+          <span class="hero__word hero__word--accent reveal" style="--d:.3s">INNOVATE.</span>
+        </h1>
+
+        <p class="hero__sub reveal" style="--d:.4s">
+          We transform curious students into builders, founders, and innovators.
+          A launchpad for startups, technology, and bold ideas at MLR Institute of Technology.
+        </p>
+
+        <div class="hero__cta reveal" style="--d:.5s">
+          <a href="apply.html" class="btn btn--primary" data-ripple>
+            <i data-lucide="rocket"></i> Join Now
+          </a>
+          <a href="#about" class="btn btn--ghost" data-ripple>
+            <i data-lucide="compass"></i> Explore
+          </a>
+        </div>
+
+        <div class="hero__stats reveal" style="--d:.6s">
+          <div class="stat">
+            <span class="stat__num" data-count="2400" data-suffix="+">0</span>
+            <span class="stat__label">Students Engaged</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="180" data-suffix="+">0</span>
+            <span class="stat__label">Events Hosted</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="320" data-suffix="+">0</span>
+            <span class="stat__label">Projects Built</span>
+          </div>
+          <div class="stat">
+            <span class="stat__num" data-count="45" data-suffix="+">0</span>
+            <span class="stat__label">Startup Initiatives</span>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero__scroll" aria-label="Scroll down">
+        <span class="hero__scroll-mouse"></span>
+      </a>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section about" id="about">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">About CIE</span>
+          <h2 class="section__title">Where ideas become <span class="grad-text">ventures</span></h2>
+          <p class="section__lead">
+            The Centre for Innovation &amp; Entrepreneurship is the creative engine of MLR Institute of Technology —
+            a space where students turn curiosity into capability and ideas into impact.
+          </p>
+        </div>
+
+        <div class="about__grid">
+          <article class="about__card reveal">
+            <div class="about__icon"><i data-lucide="target"></i></div>
+            <h3>Our Mission</h3>
+            <p>To cultivate an entrepreneurial mindset in every student by providing the tools, mentorship, and ecosystem needed to transform raw ideas into real-world solutions.</p>
+          </article>
+
+          <article class="about__card reveal" style="--d:.1s">
+            <div class="about__icon"><i data-lucide="eye"></i></div>
+            <h3>Our Vision</h3>
+            <p>To be the most student-driven innovation hub in the country — producing founders, builders, and leaders who shape the future of technology and society.</p>
+          </article>
+
+          <article class="about__card reveal" style="--d:.2s">
+            <div class="about__icon"><i data-lucide="sparkles"></i></div>
+            <h3>Our Story</h3>
+            <p>What began as a small group of passionate students has grown into a thriving community of innovators, hosting hackathons, building products, and launching startups that reach beyond campus.</p>
+          </article>
+        </div>
+
+        <!-- Timeline -->
+        <div class="timeline">
+          <h3 class="timeline__title reveal">Our Journey</h3>
+          <div class="timeline__track">
+            <div class="timeline__item reveal">
+              <div class="timeline__year">2019</div>
+              <div class="timeline__body">
+                <h4>The Spark</h4>
+                <p>CIE is founded by a group of students driven to build beyond the classroom.</p>
+              </div>
+            </div>
+            <div class="timeline__item reveal" style="--d:.1s">
+              <div class="timeline__year">2020</div>
+              <div class="timeline__body">
+                <h4>First Hackathon</h4>
+                <p>Our flagship hackathon brings together 300+ students for 24 hours of building.</p>
+              </div>
+            </div>
+            <div class="timeline__item reveal" style="--d:.2s">
+              <div class="timeline__year">2022</div>
+              <div class="timeline__body">
+                <h4>Innovation Lab</h4>
+                <p>A dedicated maker-space opens, equipped with tools for prototyping and product development.</p>
+              </div>
+            </div>
+            <div class="timeline__item reveal" style="--d:.3s">
+              <div class="timeline__year">2024</div>
+              <div class="timeline__body">
+                <h4>Startups Launched</h4>
+                <p>Student-led startups begin securing funding and reaching real customers.</p>
+              </div>
+            </div>
+            <div class="timeline__item reveal" style="--d:.4s">
+              <div class="timeline__year">Today</div>
+              <div class="timeline__body">
+                <h4>2,400+ Innovators</h4>
+                <p>A thriving ecosystem of builders, founders, and creators — and still growing.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHAT WE DO ============ -->
+    <section class="section what" id="programs">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">What We Do</span>
+          <h2 class="section__title">Programs that <span class="grad-text">build builders</span></h2>
+          <p class="section__lead">From first sketch to first customer — we support every stage of the journey.</p>
+        </div>
+
+        <div class="what__grid">
+          <article class="card reveal">
+            <div class="card__icon"><i data-lucide="flask-conical"></i></div>
+            <h3>Innovation Lab</h3>
+            <p>A maker-space for prototyping, experimentation, and turning concepts into tangible products.</p>
+          </article>
+          <article class="card reveal" style="--d:.05s">
+            <div class="card__icon"><i data-lucide="rocket"></i></div>
+            <h3>Startup Lab</h3>
+            <p>Structured support for student founders — from validation to launch and beyond.</p>
+          </article>
+          <article class="card reveal" style="--d:.1s">
+            <div class="card__icon"><i data-lucide="graduation-cap"></i></div>
+            <h3>Workshops</h3>
+            <p>Hands-on sessions on the latest technologies, design, and entrepreneurial skills.</p>
+          </article>
+          <article class="card reveal" style="--d:.15s">
+            <div class="card__icon"><i data-lucide="trophy"></i></div>
+            <h3>Hackathons</h3>
+            <p>Intense, inspiring build sprints that turn teams and caffeine into working products.</p>
+          </article>
+          <article class="card reveal" style="--d:.2s">
+            <div class="card__icon"><i data-lucide="package"></i></div>
+            <h3>Product Development</h3>
+            <p>End-to-end guidance for shipping real products used by real people.</p>
+          </article>
+          <article class="card reveal" style="--d:.25s">
+            <div class="card__icon"><i data-lucide="users"></i></div>
+            <h3>Mentorship</h3>
+            <p>One-on-one guidance from industry veterans, alumni, and successful founders.</p>
+          </article>
+          <article class="card reveal" style="--d:.3s">
+            <div class="card__icon"><i data-lucide="network"></i></div>
+            <h3>Networking</h3>
+            <p>Connect with investors, founders, and a community that opens doors.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ VERTICALS ============ -->
+    <section class="section verticals" id="verticals">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">CIE Verticals</span>
+          <h2 class="section__title">Find your <span class="grad-text">lane</span></h2>
+          <p class="section__lead">Specialized tracks designed to match your passion and grow your expertise.</p>
+        </div>
+
+        <div class="verticals__grid">
+          <article class="vert reveal">
+            <div class="vert__icon"><i data-lucide="code-2"></i></div>
+            <h3>Technical</h3>
+            <p>Full-stack development, AI/ML, IoT, and emerging technologies.</p>
+            <ul class="vert__skills">
+              <li>Web &amp; App Dev</li><li>AI / ML</li><li>Cloud &amp; DevOps</li><li>IoT</li>
+            </ul>
+          </article>
+          <article class="vert reveal" style="--d:.05s">
+            <div class="vert__icon"><i data-lucide="palette"></i></div>
+            <h3>Design</h3>
+            <p>UI/UX, product design, branding, and visual storytelling.</p>
+            <ul class="vert__skills">
+              <li>UI / UX</li><li>Figma</li><li>Branding</li><li>Motion</li>
+            </ul>
+          </article>
+          <article class="vert reveal" style="--d:.1s">
+            <div class="vert__icon"><i data-lucide="megaphone"></i></div>
+            <h3>Marketing</h3>
+            <p>Growth, social media, campaigns, and brand strategy.</p>
+            <ul class="vert__skills">
+              <li>Growth</li><li>Social</li><li>SEO</li><li>Analytics</li>
+            </ul>
+          </article>
+          <article class="vert reveal" style="--d:.15s">
+            <div class="vert__icon"><i data-lucide="pen-tool"></i></div>
+            <h3>Content</h3>
+            <p>Copywriting, storytelling, newsletters, and documentation.</p>
+            <ul class="vert__skills">
+              <li>Copywriting</li><li>Blogging</li><li>Storytelling</li><li>Docs</li>
+            </ul>
+          </article>
+          <article class="vert reveal" style="--d:.2s">
+            <div class="vert__icon"><i data-lucide="camera"></i></div>
+            <h3>Photography</h3>
+            <p>Event coverage, product shoots, and visual content creation.</p>
+            <ul class="vert__skills">
+              <li>Event Coverage</li><li>Product</li><li>Editing</li><li>Portrait</li>
+            </ul>
+          </article>
+          <article class="vert reveal" style="--d:.25s">
+            <div class="vert__icon"><i data-lucide="video"></i></div>
+            <h3>Videography</h3>
+            <p>Reels, aftermovies, documentaries, and motion content.</p>
+            <ul class="vert__skills">
+              <li>Cinematography</li><li>Editing</li><li>Reels</li><li>Motion</li>
+            </ul>
+          </article>
+          <article class="vert reveal" style="--d:.3s">
+            <div class="vert__icon"><i data-lucide="clipboard-list"></i></div>
+            <h3>Operations</h3>
+            <p>Logistics, planning, and the engine that keeps everything running.</p>
+            <ul class="vert__skills">
+              <li>Planning</li><li>Logistics</li><li>Process</li><li>Tools</li>
+            </ul>
+          </article>
+          <article class="vert reveal" style="--d:.35s">
+            <div class="vert__icon"><i data-lucide="calendar-check"></i></div>
+            <h3>Events</h3>
+            <p>Organizing hackathons, meetups, and flagship CIE experiences.</p>
+            <ul class="vert__skills">
+              <li>Hackathons</li><li>Meetups</li><li>Summits</li><li>Webinars</li>
+            </ul>
+          </article>
+          <article class="vert reveal" style="--d:.4s">
+            <div class="vert__icon"><i data-lucide="lightbulb"></i></div>
+            <h3>Startup Research</h3>
+            <p>Market research, competitor analysis, and venture validation.</p>
+            <ul class="vert__skills">
+              <li>Market Research</li><li>Validation</li><li>Analysis</li><li>Strategy</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WHY JOIN ============ -->
+    <section class="section why" id="why">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Why Join CIE</span>
+          <h2 class="section__title">More than a club — a <span class="grad-text">launchpad</span></h2>
+          <p class="section__lead">The skills, network, and experiences that set you apart.</p>
+        </div>
+
+        <div class="why__grid">
+          <article class="feature reveal">
+            <i data-lucide="award"></i>
+            <h4>Leadership</h4>
+            <p>Lead teams, drive initiatives, and develop the confidence to take charge.</p>
+          </article>
+          <article class="feature reveal" style="--d:.05s">
+            <i data-lucide="network"></i>
+            <h4>Networking</h4>
+            <p>Build connections with peers, alumni, founders, and industry leaders.</p>
+          </article>
+          <article class="feature reveal" style="--d:.1s">
+            <i data-lucide="rocket"></i>
+            <h4>Startup Exposure</h4>
+            <p>Get an inside look at how startups operate, raise funds, and scale.</p>
+          </article>
+          <article class="feature reveal" style="--d:.15s">
+            <i data-lucide="user-check"></i>
+            <h4>Industry Mentorship</h4>
+            <p>Learn directly from professionals who've built and shipped at scale.</p>
+          </article>
+          <article class="feature reveal" style="--d:.2s">
+            <i data-lucide="folder-git-2"></i>
+            <h4>Real Projects</h4>
+            <p>Work on products that ship — not just assignments that get graded.</p>
+          </article>
+          <article class="feature reveal" style="--d:.25s">
+            <i data-lucide="badge-check"></i>
+            <h4>Certificates</h4>
+            <p>Earn recognition for your contributions and completed programs.</p>
+          </article>
+          <article class="feature reveal" style="--d:.3s">
+            <i data-lucide="briefcase"></i>
+            <h4>Portfolio Building</h4>
+            <p>Build a body of work that stands out in internships and interviews.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECRUITMENT PROCESS ============ -->
+    <section class="section process" id="recruitment">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Recruitment Process</span>
+          <h2 class="section__title">Your path to <span class="grad-text">joining CIE</span></h2>
+          <p class="section__lead">Five simple steps from application to onboarding.</p>
+        </div>
+
+        <div class="process__steps">
+          <div class="step reveal">
+            <div class="step__num">01</div>
+            <div class="step__icon"><i data-lucide="file-text"></i></div>
+            <h3>Apply</h3>
+            <p>Fill out the application form and tell us about your interests.</p>
+          </div>
+          <div class="step__arrow"><i data-lucide="arrow-down"></i></div>
+          <div class="step reveal" style="--d:.1s">
+            <div class="step__num">02</div>
+            <div class="step__icon"><i data-lucide="search"></i></div>
+            <h3>Screening</h3>
+            <p>We review applications and shortlist candidates based on potential.</p>
+          </div>
+          <div class="step__arrow"><i data-lucide="arrow-down"></i></div>
+          <div class="step reveal" style="--d:.2s">
+            <div class="step__num">03</div>
+            <div class="step__icon"><i data-lucide="message-circle"></i></div>
+            <h3>Interview</h3>
+            <p>A casual conversation to understand your passion and fit.</p>
+          </div>
+          <div class="step__arrow"><i data-lucide="arrow-down"></i></div>
+          <div class="step reveal" style="--d:.3s">
+            <div class="step__num">04</div>
+            <div class="step__icon"><i data-lucide="check-circle"></i></div>
+            <h3>Selection</h3>
+            <p>Welcome aboard! You're officially part of the CIE family.</p>
+          </div>
+          <div class="step__arrow"><i data-lucide="arrow-down"></i></div>
+          <div class="step reveal" style="--d:.4s">
+            <div class="step__num">05</div>
+            <div class="step__icon"><i data-lucide="door-open"></i></div>
+            <h3>Onboarding</h3>
+            <p>Meet your team, get oriented, and start building from day one.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ RECRUITMENT DOMAINS ============ -->
+    <section class="section domains" id="domains">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Recruitment Domains</span>
+          <h2 class="section__title">Choose your <span class="grad-text">domain</span></h2>
+          <p class="section__lead">We recruit across nine domains — find where you shine.</p>
+        </div>
+
+        <div class="domains__grid">
+          <button class="domain reveal" data-domain="Technical">
+            <i data-lucide="code-2"></i><span>Technical</span>
+          </button>
+          <button class="domain reveal" style="--d:.04s" data-domain="Design">
+            <i data-lucide="palette"></i><span>Design</span>
+          </button>
+          <button class="domain reveal" style="--d:.08s" data-domain="Marketing">
+            <i data-lucide="megaphone"></i><span>Marketing</span>
+          </button>
+          <button class="domain reveal" style="--d:.12s" data-domain="Content">
+            <i data-lucide="pen-tool"></i><span>Content</span>
+          </button>
+          <button class="domain reveal" style="--d:.16s" data-domain="Photography">
+            <i data-lucide="camera"></i><span>Photography</span>
+          </button>
+          <button class="domain reveal" style="--d:.2s" data-domain="Videography">
+            <i data-lucide="video"></i><span>Videography</span>
+          </button>
+          <button class="domain reveal" style="--d:.24s" data-domain="Operations">
+            <i data-lucide="clipboard-list"></i><span>Operations</span>
+          </button>
+          <button class="domain reveal" style="--d:.28s" data-domain="Events">
+            <i data-lucide="calendar-check"></i><span>Events</span>
+          </button>
+          <button class="domain reveal" style="--d:.32s" data-domain="Startup Research">
+            <i data-lucide="lightbulb"></i><span>Startup Research</span>
+          </button>
+        </div>
+
+        <div class="domain-detail" id="domainDetail" hidden>
+          <div class="domain-detail__inner">
+            <button class="domain-detail__close" id="domainClose" aria-label="Close">
+              <i data-lucide="x"></i>
+            </button>
+            <h3 id="domainTitle"></h3>
+            <p id="domainDesc"></p>
+            <ul id="domainSkills"></ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TEAM ============ -->
+    <section class="section team" id="team">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">The Team</span>
+          <h2 class="section__title">The people behind <span class="grad-text">CIE</span></h2>
+          <p class="section__lead">A dedicated team of students and mentors driving the vision forward.</p>
+        </div>
+
+        <div class="team__grid">
+          <article class="member reveal">
+            <div class="member__avatar" style="--c1:#5b8cff;--c2:#a855f7">FA</div>
+            <h4>Faculty Mentor</h4>
+            <p class="member__role">Faculty In-Charge</p>
+            <div class="member__socials">
+              <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+              <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+          </article>
+          <article class="member reveal" style="--d:.1s">
+            <div class="member__avatar" style="--c1:#a855f7;--c2:#ec4899">PR</div>
+            <h4>President</h4>
+            <p class="member__role">Student Lead</p>
+            <div class="member__socials">
+              <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+              <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+          </article>
+          <article class="member reveal" style="--d:.2s">
+            <div class="member__avatar" style="--c1:#06b6d4;--c2:#5b8cff">VP</div>
+            <h4>Vice President</h4>
+            <p class="member__role">Operations</p>
+            <div class="member__socials">
+              <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+              <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+          </article>
+          <article class="member reveal" style="--d:.3s">
+            <div class="member__avatar" style="--c1:#10b981;--c2:#06b6d4">TL</div>
+            <h4>Tech Lead</h4>
+            <p class="member__role">Technical Vertical</p>
+            <div class="member__socials">
+              <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+              <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ GALLERY ============ -->
+    <section class="section gallery" id="gallery">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Gallery</span>
+          <h2 class="section__title">Moments that <span class="grad-text">matter</span></h2>
+          <p class="section__lead">A glimpse into life at CIE — hackathons, workshops, and everything in between.</p>
+        </div>
+
+        <div class="gallery__grid">
+          <figure class="gallery__item gallery__item--tall reveal" data-src="https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/3184460/pexels-photo-3184460.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Team collaboration at a hackathon" loading="lazy" />
+            <figcaption><i data-lucide="maximize-2"></i></figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/3184325/pexels-photo-3184325.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Workshop session" loading="lazy" />
+            <figcaption><i data-lucide="maximize-2"></i></figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/3184339/pexels-photo-3184339.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coding session" loading="lazy" />
+            <figcaption><i data-lucide="maximize-2"></i></figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--wide reveal" data-src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=1200">
+            <img src="https://images.pexels.com/photos/3184360/pexels-photo-3184360.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Team meeting" loading="lazy" />
+            <figcaption><i data-lucide="maximize-2"></i></figcaption>
+          </figure>
+          <figure class="gallery__item reveal" data-src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Presentation" loading="lazy" />
+            <figcaption><i data-lucide="maximize-2"></i></figcaption>
+          </figure>
+          <figure class="gallery__item gallery__item--tall reveal" data-src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=900">
+            <img src="https://images.pexels.com/photos/3184398/pexels-photo-3184398.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Brainstorming" loading="lazy" />
+            <figcaption><i data-lucide="maximize-2"></i></figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" hidden>
+        <button class="lightbox__close" id="lightboxClose" aria-label="Close"><i data-lucide="x"></i></button>
+        <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Previous"><i data-lucide="chevron-left"></i></button>
+        <img src="" alt="Gallery image" id="lightboxImg" />
+        <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Next"><i data-lucide="chevron-right"></i></button>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section testimonials" id="testimonials">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Testimonials</span>
+          <h2 class="section__title">Voices of <span class="grad-text">CIE</span></h2>
+        </div>
+
+        <div class="carousel" id="carousel">
+          <div class="carousel__track" id="carouselTrack">
+            <article class="testimonial">
+              <div class="testimonial__stars">★★★★★</div>
+              <p>"CIE gave me the platform to turn my idea into a real product. The mentorship and community are unmatched. I went from never having written code to shipping a full app."</p>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" style="--c1:#5b8cff;--c2:#a855f7">AK</div>
+                <div><strong>Aarav Krishna</strong><span>Technical Vertical, 2023</span></div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <div class="testimonial__stars">★★★★★</div>
+              <p>"Joining CIE was the best decision of my college life. I found my passion for design, built a portfolio, and landed an internship at a startup — all because of the exposure here."</p>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" style="--c1:#a855f7;--c2:#ec4899">SN</div>
+                <div><strong>Sneha Reddy</strong><span>Design Vertical, 2023</span></div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <div class="testimonial__stars">★★★★★</div>
+              <p>"The hackathons are electric. 24 hours of building, learning, and connecting with people who care about creating things. CIE is where I learned to lead."</p>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" style="--c1:#06b6d4;--c2:#5b8cff">RV</div>
+                <div><strong>Rahul Verma</strong><span>Events Vertical, 2022</span></div>
+              </div>
+            </article>
+            <article class="testimonial">
+              <div class="testimonial__stars">★★★★★</div>
+              <p>"From shy first-year to confident founder — CIE changed how I see problems. The startup research vertical taught me to think like an entrepreneur."</p>
+              <div class="testimonial__author">
+                <div class="testimonial__avatar" style="--c1:#10b981;--c2:#06b6d4">PM</div>
+                <div><strong>Priya Menon</strong><span>Startup Research, 2024</span></div>
+              </div>
+            </article>
+          </div>
+
+          <div class="carousel__controls">
+            <button class="carousel__btn" id="carouselPrev" aria-label="Previous"><i data-lucide="arrow-left"></i></button>
+            <div class="carousel__dots" id="carouselDots"></div>
+            <button class="carousel__btn" id="carouselNext" aria-label="Next"><i data-lucide="arrow-right"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section faq" id="faq">
+      <div class="container container--narrow">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">FAQ</span>
+          <h2 class="section__title">Questions, <span class="grad-text">answered</span></h2>
+        </div>
+
+        <div class="faq__list">
+          <details class="faq__item reveal">
+            <summary>Who can join CIE? <i data-lucide="chevron-down"></i></summary>
+            <p>Any student of MLR Institute of Technology, regardless of year or branch, can apply. We welcome curiosity over experience.</p>
+          </details>
+          <details class="faq__item reveal" style="--d:.05s">
+            <summary>Do I need prior experience? <i data-lucide="chevron-down"></i></summary>
+            <p>No. We value passion and willingness to learn over existing skills. Our onboarding and workshops will get you up to speed.</p>
+          </details>
+          <details class="faq__item reveal" style="--d:.1s">
+            <summary>How much time do I need to commit? <i data-lucide="chevron-down"></i></summary>
+            <p>Typically 4–6 hours per week, with more during events and hackathons. We work with your academic schedule.</p>
+          </details>
+          <details class="faq__item reveal" style="--d:.15s">
+            <summary>Is there a fee to join? <i data-lucide="chevron-down"></i></summary>
+            <p>No. CIE is completely free for all MLR Institute of Technology students.</p>
+          </details>
+          <details class="faq__item reveal" style="--d:.2s">
+            <summary>Can I switch domains after joining? <i data-lucide="chevron-down"></i></summary>
+            <p>Yes. We encourage exploration. You can switch domains after your first semester with your lead's approval.</p>
+          </details>
+          <details class="faq__item reveal" style="--d:.25s">
+            <summary>Does CIE help with startups? <i data-lucide="chevron-down"></i></summary>
+            <p>Absolutely. Our Startup Lab provides mentorship, resources, and connections to help you take your idea from zero to launch.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section contact" id="contact">
+      <div class="container">
+        <div class="section__head reveal">
+          <span class="section__eyebrow">Contact</span>
+          <h2 class="section__title">Let's <span class="grad-text">connect</span></h2>
+          <p class="section__lead">Have questions or want to collaborate? We'd love to hear from you.</p>
+        </div>
+
+        <div class="contact__grid">
+          <div class="contact__info reveal">
+            <a href="mailto:cie@mlrit.ac.in" class="contact__item">
+              <div class="contact__icon"><i data-lucide="mail"></i></div>
+              <div><strong>Email</strong><span>cie@mlrit.ac.in</span></div>
+            </a>
+            <div class="contact__item">
+              <div class="contact__icon"><i data-lucide="map-pin"></i></div>
+              <div><strong>Location</strong><span>MLR Institute of Technology, Dundigal, Hyderabad — 500043</span></div>
+            </div>
+            <div class="contact__socials">
+              <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+              <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+              <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+              <a href="#" aria-label="GitHub"><i data-lucide="github"></i></a>
+            </div>
+            <div class="contact__map">
+              <iframe
+                title="MLR Institute of Technology location"
+                src="https://www.google.com/maps?q=MLR+Institute+of+Technology+Dundigal+Hyderabad&output=embed"
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+
+          <form class="contact__form reveal" id="contactForm" novalidate>
+            <div class="field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your name" />
+            </div>
+            <div class="field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="you@example.com" />
+            </div>
+            <div class="field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="4" required placeholder="Tell us what's on your mind..."></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary btn--block" data-ripple>
+              <i data-lucide="send"></i> Send Message
+            </button>
+            <p class="form__status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="nav__logo">
+          <span class="nav__logo-mark">
+            <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
+              <path d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z" fill="none" stroke="url(#logoGrad)" stroke-width="2.2" stroke-linejoin="round"/>
+              <path d="M11 11 L11 21 M11 11 L16 16 L11 21 M18 11 L18 21" stroke="url(#logoGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            </svg>
+          </span>
+          <span class="nav__logo-text">CIE</span>
+        </a>
+        <p>Centre for Innovation &amp; Entrepreneurship<br/>MLR Institute of Technology</p>
+        <p class="footer__tagline">Ideate. Build. Innovate.</p>
+      </div>
+
+      <div class="footer__links">
+        <h4>Quick Links</h4>
+        <a href="#about">About</a>
+        <a href="#verticals">Verticals</a>
+        <a href="#programs">Programs</a>
+        <a href="#recruitment">Recruitment</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div class="footer__links">
+        <h4>Programs</h4>
+        <a href="#programs">Innovation Lab</a>
+        <a href="#programs">Startup Lab</a>
+        <a href="#programs">Workshops</a>
+        <a href="#programs">Hackathons</a>
+        <a href="#programs">Mentorship</a>
+      </div>
+
+      <div class="footer__links">
+        <h4>Connect</h4>
+        <div class="footer__socials">
+          <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
+          <a href="#" aria-label="Twitter"><i data-lucide="twitter"></i></a>
+          <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <p>&copy; <span id="year"></span> CIE — MLR Institute of Technology. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-top" id="backTop" aria-label="Back to top"><i data-lucide="arrow-up"></i></button>
+
+  <script src="script.js"></script>
+</body>
+</html>
