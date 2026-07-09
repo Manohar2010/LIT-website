@@ -84,13 +84,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const year = data.get('year');
     const branch = data.get('branch');
     const domain1 = data.get('domain1');
-    const skills = data.get('skills')?.trim();
-    const experience = data.get('experience')?.trim();
+    const backlogs = data.get('backlogs')?.trim();
+    const cgpa = data.get('cgpa')?.trim();
     const why = data.get('why')?.trim();
     const availability = data.get('availability');
 
     // Validate required fields
-    if (!fullName || !email || !phone || !rollNumber || !year || !branch) {
+    if (!fullName || !email || !phone || !rollNumber) {
       showError('Please fill in all required personal information fields.');
       return;
     }
@@ -106,12 +106,12 @@ document.addEventListener('DOMContentLoaded', () => {
       showError('Please select your first domain preference.');
       return;
     }
-    if (!skills || !experience || !why) {
-      showError('Please complete all required fields in the journey section.');
+    if (!cgpa || !year || !branch){
+      showError('Please provide all the academic detials.')
       return;
     }
-    if (!availability) {
-      showError('Please select your weekly availability.');
+    if (!backlogs || !why) {
+      showError('Please complete all required fields in the journey section.');
       return;
     }
 
