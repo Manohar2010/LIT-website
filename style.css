@@ -582,20 +582,24 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
 }
 
 /* ============ 9. ABOUT ============ */
-.about__grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: var(--sp-3);
-  margin-bottom: var(--sp-7);
+.about__grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:var(--sp-3);
+    margin-bottom:var(--sp-7);
+    justify-content:center;
 }
 .about__card {
   padding: var(--sp-4);
   border: 1px solid var(--border);
   align-items: center;
-  width: 500px;
+  width: 335px;
   border-radius: var(--r-lg);
   background:#FFFFFF;
   transition: transform var(--t), border-color var(--t), box-shadow var(--t);
+  width:100%;
+  max-width:500px;
+  margin:0 auto;
 }
 .about__card:hover {
   transform: translateY(-6px);
