@@ -276,7 +276,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
   width: 0%;
   background: var(--grad);
   z-index: 1000;
-  transition: width 0.1s linear;
+  transition: none;
 }
 
 .nav {
@@ -284,8 +284,8 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
   top: 0; left: 0; right: 0;
   height: var(--nav-h);
   z-index: 100;
-  transition: background var(--t), backdrop-filter var(--t), border-color var(--t);
-  border-bottom: 1px solid transparent;
+  transition: none;
+  border-bottom: 1px  transparent;
 }
 .nav.scrolled {
   background: rgba(7, 7, 12, 0.72);
@@ -294,7 +294,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
 }
 
 .nav.scrolled .nav__logo-img{
-    transform:scale(.94);
+    transform:none;
 }
 .nav.scrolled .nav__logo::before{
     opacity: 1;
@@ -325,18 +325,15 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
 
     background:transparent;
 
-    transition:
-        padding .45s ease,
-        background .45s ease,
-        box-shadow .45s ease,
-        transform .35s ease;
+    transition:none;
 }
 
 .nav__logo-img{
-    height:48px;
+    height:45px;
     width:auto;
     display:block;
-    transition:transform .35s ease;
+    transition:none;
+    padding-top: 2px;
 
 }
 
