@@ -30,31 +30,43 @@
 
 /* ============ 1. DESIGN TOKENS ============ */
 :root {
-  /* Color ramps */
-  --bg: #07070c;
-  --bg-2: #0c0c14;
-  --bg-3: #11111c;
-  --surface: rgba(255, 255, 255, 0.03);
-  --surface-2: rgba(255, 255, 255, 0.06);
-  --border: rgba(255, 255, 255, 0.08);
-  --border-2: rgba(255, 255, 255, 0.14);
+  /* =======================
+   WHITE • SKY BLUE • BLACK
+========================== */
 
-  --text: #f4f4f8;
-  --text-2: #b4b4c8;
-  --text-3: #7a7a90;
+--bg: #FFFFFF;
+--bg-2: #F7FBFF;
+--bg-3: #EEF8FF;
 
-  /* Accents */
-  --blue: #5b8cff;
-  --blue-2: #3b6ef0;
-  --purple: #a855f7;
-  --purple-2: #9333ea;
-  --cyan: #06b6d4;
-  --pink: #ec4899;
-  --green: #10b981;
+--surface: #FFFFFF;
+--surface-2: #F8FCFF;
 
-  --grad: linear-gradient(135deg, #5b8cff 0%, #a855f7 100%);
-  --grad-2: linear-gradient(135deg, #06b6d4 0%, #5b8cff 50%, #a855f7 100%);
-  --grad-soft: linear-gradient(135deg, rgba(91, 140, 255, 0.15), rgba(168, 85, 247, 0.15));
+--border: #D9EAF7;
+--border-2: #B7DDF3;
+
+--text: #111827;
+--text-2: #4B5563;
+--text-3: #6B7280;
+
+--blue: #38BDF8;
+--blue-2: #0EA5E9;
+--purple: #38BDF8;
+--purple-2: #0EA5E9;
+--cyan: #7DD3FC;
+--pink: #38BDF8;
+--green: #10B981;
+
+--grad: linear-gradient(135deg,#38BDF8,#0EA5E9);
+--grad-2: linear-gradient(135deg,#7DD3FC,#38BDF8,#0EA5E9);
+--grad-soft: linear-gradient(
+135deg,
+rgba(56,189,248,.12),
+rgba(14,165,233,.08)
+);
+
+--shadow:0 10px 30px rgba(0,0,0,.08);
+--shadow-lg:0 20px 50px rgba(0,0,0,.12);
+--glow:0 0 35px rgba(56,189,248,.25);
 
   /* Typography */
   --font-body: 'Inter', system-ui, -apple-system, sans-serif;
@@ -107,8 +119,8 @@ html {
 
 body {
   font-family: var(--font-body);
-  background: var(--bg);
-  color: var(--text);
+  background:#FFFFFF;
+  color:var(--text);
   line-height: 1.6;
   overflow-x: hidden;
   font-weight: 400;
@@ -341,6 +353,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
 /* ============ 7. HERO ============ */
 .hero {
   min-height: 100vh;
+  background:#FFFFFF;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -349,12 +362,12 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
   overflow: hidden;
   padding: calc(var(--nav-h) + var(--sp-6)) var(--sp-4) var(--sp-7);
 }
-.hero__bg { position: absolute; inset: 0; z-index: 0; }
+.hero__bg { position: absolute; inset: 0; z-index: 0;background:#FFFFFF; }
 .hero__grid {
   position: absolute; inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.025) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.025) 1px, transparent 1px);
+    linear-gradient(rgba(0,0,0,.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,.04) 1px, transparent 1px);
   background-size: 60px 60px;
   mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000 30%, transparent 75%);
   -webkit-mask-image: radial-gradient(ellipse 80% 60% at 50% 40%, #000 30%, transparent 75%);
@@ -506,10 +519,22 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
 @keyframes scrollDot { 0% { opacity: 1; top: 8px; } 100% { opacity: 0; top: 24px; } }
 
 /* ============ 8. SECTIONS (shared) ============ */
-.about, .why, .faq { background: var(--bg-2); }
-.what, .domains, .team { background: var(--bg); }
-.verticals, .testimonials, .contact { background: var(--bg-2); }
-.process, .gallery { background: var(--bg); }
+.about,
+.why,
+.verticals,
+.contact,
+.gallery,
+.faq{
+    background:#F7FBFF;
+}
+
+.what,
+.domains,
+.team,
+.process,
+.testimonials{
+    background:#FFFFFF;
+}
 
 /* ============ 9. ABOUT ============ */
 .about__grid {
@@ -522,7 +547,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
   padding: var(--sp-4);
   border: 1px solid var(--border);
   border-radius: var(--r-lg);
-  background: var(--surface);
+  background:#FFFFFF;
   transition: transform var(--t), border-color var(--t), box-shadow var(--t);
 }
 .about__card:hover {
@@ -886,7 +911,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
   position: absolute;
   inset: 0;
   display: flex; align-items: center; justify-content: center;
-  background: linear-gradient(180deg, transparent 40%, rgba(7,7,12,0.8));
+  background: linear-gradient(180deg, transparent 40%, #FFFFFF);
   opacity: 0;
   transition: opacity var(--t);
 }
@@ -910,7 +935,7 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
   align-items: center;
   justify-content: center;
   padding: var(--sp-4);
-  background: rgba(0, 0, 0, 0.92);
+  background: rgba(255, 255, 255, 0.92);
   backdrop-filter: blur(10px);
   animation: fadeIn var(--t);
 }
