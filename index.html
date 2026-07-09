@@ -33,29 +33,17 @@
   <!-- ============ NAVIGATION ============ -->
   <header class="nav" id="nav">
     <div class="nav__inner">
-      <a href="#hero" class="nav__logo" aria-label="CIE Home">
-        <span class="nav__logo-mark">
-          <svg viewBox="0 0 32 32" width="28" height="28" aria-hidden="true">
-            <defs>
-              <linearGradient id="logoGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0%" stop-color="#5b8cff"/>
-                <stop offset="100%" stop-color="#a855f7"/>
-              </linearGradient>
-            </defs>
-            <path d="M16 2 L28 9 L28 23 L16 30 L4 23 L4 9 Z" fill="none" stroke="url(#logoGrad)" stroke-width="2.2" stroke-linejoin="round"/>
-            <path d="M11 11 L11 21 M11 11 L16 16 L11 21 M18 11 L18 21" stroke="url(#logoGrad)" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-          </svg>
-        </span>
-        <span class="nav__logo-text">LIT</span>
-      </a>
+      <a href="#" class="nav__logo">
+    <div class="nav__logo-box">
+        <img src="club-logo-5.png" alt="LIT Logo" class="nav__logo-img">
+    </div>
+</a>
 
       <nav class="nav__links" id="navLinks" aria-label="Primary">
         <a href="#hero" class="nav__link">Home</a>
         <a href="#about" class="nav__link">About</a>
         <a href="#events" class="nav__link">Events</a>
-        <a href="#verticals" class="nav__link">Verticals</a>
         <a href="#recruitment" class="nav__link">Recruitment</a>
-        <a href="#team" class="nav__link">Team</a>
         
         <a href="#contact" class="nav__link">Contact</a>
       </nav>
@@ -137,8 +125,10 @@
     <section class="section about" id="about">
       <div class="container">
         <div class="section__head reveal">
-          <span class="section__eyebrow">About LIT</span>
-          <h2 class="section__title">Where ideas become <span class="grad-text">ventures</span></h2>
+          <h1 class="outline">
+  CLUB LITERATI
+</h1><br>
+          <h2 class="section__title">WHERE IDEAS BECOME<br> <span class="grad-text">VENTURES</span></h2>
           <p class="section__lead">
             The Centre for Innovation &amp; Entrepreneurship is the creative engine of MLR Institute of Technology —
             a space where students turn curiosity into capability and ideas into impact.
@@ -148,21 +138,16 @@
         <div class="about__grid">
           <article class="about__card reveal">
             <div class="about__icon"><i data-lucide="target"></i></div>
-            <h3>Our Mission</h3>
-            <p>To cultivate an entrepreneurial mindset in every student by providing the tools, mentorship, and ecosystem needed to transform raw ideas into real-world solutions.</p>
+            <h3 class="title"><br>Our Mission</h3>
+            <p class="title">To cultivate an entrepreneurial mindset in every student by providing the tools, mentorship, and ecosystem needed to transform raw ideas into real-world solutions.</p>
           </article>
 
           <article class="about__card reveal" style="--d:.1s">
             <div class="about__icon"><i data-lucide="eye"></i></div>
-            <h3>Our Vision</h3>
-            <p>To be the most student-driven innovation hub in the country — producing founders, builders, and leaders who shape the future of technology and society.</p>
+            <h3 class="title"><br>Our Vision</h3>
+            <p class="title">To be the most student-driven innovation hub in the country — producing founders, builders, and leaders who shape the future of technology and society.</p>
           </article>
 
-          <article class="about__card reveal" style="--d:.2s">
-            <div class="about__icon"><i data-lucide="sparkles"></i></div>
-            <h3>Our Story</h3>
-            <p>What began as a small group of passionate students has grown into a thriving community of innovators, hosting hackathons, building products, and launching startups that reach beyond campus.</p>
-          </article>
         </div>
 
         <!-- Timeline -->
@@ -221,134 +206,41 @@
         <div class="what__grid">
           <article class="card reveal">
             <div class="card__icon"><i data-lucide="flask-conical"></i></div>
-            <h3>Innovation Lab</h3>
+            <h3>MLRIT MUN</h3>
             <p>A maker-space for prototyping, experimentation, and turning concepts into tangible products.</p>
           </article>
           <article class="card reveal" style="--d:.05s">
             <div class="card__icon"><i data-lucide="rocket"></i></div>
-            <h3>Startup Lab</h3>
+            <h3>TEDxMLRIT</h3>
             <p>Structured support for student founders — from validation to launch and beyond.</p>
           </article>
           <article class="card reveal" style="--d:.1s">
             <div class="card__icon"><i data-lucide="graduation-cap"></i></div>
-            <h3>Workshops</h3>
+            <h3>Literature Festival</h3>
             <p>Hands-on sessions on the latest technologies, design, and entrepreneurial skills.</p>
           </article>
           <article class="card reveal" style="--d:.15s">
             <div class="card__icon"><i data-lucide="trophy"></i></div>
-            <h3>Hackathons</h3>
+            <h3>Murder Mystery</h3>
             <p>Intense, inspiring build sprints that turn teams and caffeine into working products.</p>
           </article>
           <article class="card reveal" style="--d:.2s">
             <div class="card__icon"><i data-lucide="package"></i></div>
-            <h3>Product Development</h3>
+            <h3>Seminar Mentorship</h3>
             <p>End-to-end guidance for shipping real products used by real people.</p>
           </article>
-          <article class="card reveal" style="--d:.25s">
-            <div class="card__icon"><i data-lucide="users"></i></div>
-            <h3>Mentorship</h3>
-            <p>One-on-one guidance from industry veterans, alumni, and successful founders.</p>
-          </article>
-          <article class="card reveal" style="--d:.3s">
-            <div class="card__icon"><i data-lucide="network"></i></div>
-            <h3>Networking</h3>
-            <p>Connect with investors, founders, and a community that opens doors.</p>
-          </article>
+          
         </div>
       </div>
     </section>
 
-    <!-- ============ VERTICALS ============ -->
-    <section class="section verticals" id="verticals">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="section__eyebrow">LIT Verticals</span>
-          <h2 class="section__title">Find your <span class="grad-text">lane</span></h2>
-          <p class="section__lead">Specialized tracks designed to match your passion and grow your expertise.</p>
-        </div>
-
-        <div class="verticals__grid">
-          <article class="vert reveal">
-            <div class="vert__icon"><i data-lucide="code-2"></i></div>
-            <h3>Technical</h3>
-            <p>Full-stack development, AI/ML, IoT, and emerging technologies.</p>
-            <ul class="vert__skills">
-              <li>Web &amp; App Dev</li><li>AI / ML</li><li>Cloud &amp; DevOps</li><li>IoT</li>
-            </ul>
-          </article>
-          <article class="vert reveal" style="--d:.05s">
-            <div class="vert__icon"><i data-lucide="palette"></i></div>
-            <h3>Design</h3>
-            <p>UI/UX, product design, branding, and visual storytelling.</p>
-            <ul class="vert__skills">
-              <li>UI / UX</li><li>Figma</li><li>Branding</li><li>Motion</li>
-            </ul>
-          </article>
-          <article class="vert reveal" style="--d:.1s">
-            <div class="vert__icon"><i data-lucide="megaphone"></i></div>
-            <h3>Marketing</h3>
-            <p>Growth, social media, campaigns, and brand strategy.</p>
-            <ul class="vert__skills">
-              <li>Growth</li><li>Social</li><li>SEO</li><li>Analytics</li>
-            </ul>
-          </article>
-          <article class="vert reveal" style="--d:.15s">
-            <div class="vert__icon"><i data-lucide="pen-tool"></i></div>
-            <h3>Content</h3>
-            <p>Copywriting, storytelling, newsletters, and documentation.</p>
-            <ul class="vert__skills">
-              <li>Copywriting</li><li>Blogging</li><li>Storytelling</li><li>Docs</li>
-            </ul>
-          </article>
-          <article class="vert reveal" style="--d:.2s">
-            <div class="vert__icon"><i data-lucide="camera"></i></div>
-            <h3>Photography</h3>
-            <p>Event coverage, product shoots, and visual content creation.</p>
-            <ul class="vert__skills">
-              <li>Event Coverage</li><li>Product</li><li>Editing</li><li>Portrait</li>
-            </ul>
-          </article>
-          <article class="vert reveal" style="--d:.25s">
-            <div class="vert__icon"><i data-lucide="video"></i></div>
-            <h3>Videography</h3>
-            <p>Reels, aftermovies, documentaries, and motion content.</p>
-            <ul class="vert__skills">
-              <li>Cinematography</li><li>Editing</li><li>Reels</li><li>Motion</li>
-            </ul>
-          </article>
-          <article class="vert reveal" style="--d:.3s">
-            <div class="vert__icon"><i data-lucide="clipboard-list"></i></div>
-            <h3>Operations</h3>
-            <p>Logistics, planning, and the engine that keeps everything running.</p>
-            <ul class="vert__skills">
-              <li>Planning</li><li>Logistics</li><li>Process</li><li>Tools</li>
-            </ul>
-          </article>
-          <article class="vert reveal" style="--d:.35s">
-            <div class="vert__icon"><i data-lucide="calendar-check"></i></div>
-            <h3>Events</h3>
-            <p>Organizing hackathons, meetups, and flagship LIT experiences.</p>
-            <ul class="vert__skills">
-              <li>Hackathons</li><li>Meetups</li><li>Summits</li><li>Webinars</li>
-            </ul>
-          </article>
-          <article class="vert reveal" style="--d:.4s">
-            <div class="vert__icon"><i data-lucide="lightbulb"></i></div>
-            <h3>Startup Research</h3>
-            <p>Market research, competitor analysis, and venture validation.</p>
-            <ul class="vert__skills">
-              <li>Market Research</li><li>Validation</li><li>Analysis</li><li>Strategy</li>
-            </ul>
-          </article>
-        </div>
-      </div>
-    </section>
+    
 
     <!-- ============ WHY JOIN ============ -->
     <section class="section why" id="why">
       <div class="container">
         <div class="section__head reveal">
-          <span class="section__eyebrow">Why Join CIE</span>
+          <span class="section__eyebrow">Why Join LIT</span>
           <h2 class="section__title">More than a club — a <span class="grad-text">launchpad</span></h2>
           <p class="section__lead">The skills, network, and experiences that set you apart.</p>
         </div>
@@ -493,56 +385,7 @@
       </div>
     </section>
 
-    <!-- ============ TEAM ============ -->
-    <section class="section team" id="team">
-      <div class="container">
-        <div class="section__head reveal">
-          <span class="section__eyebrow">The Team</span>
-          <h2 class="section__title">The people behind <span class="grad-text">CIE</span></h2>
-          <p class="section__lead">A dedicated team of students and mentors driving the vision forward.</p>
-        </div>
-
-        <div class="team__grid">
-          <article class="member reveal">
-            <div class="member__avatar" style="--c1:#5b8cff;--c2:#a855f7">FA</div>
-            <h4>Faculty Mentor</h4>
-            <p class="member__role">Faculty In-Charge</p>
-            <div class="member__socials">
-              <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-              <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
-            </div>
-          </article>
-          <article class="member reveal" style="--d:.1s">
-            <div class="member__avatar" style="--c1:#a855f7;--c2:#ec4899">PR</div>
-            <h4>President</h4>
-            <p class="member__role">Student Lead</p>
-            <div class="member__socials">
-              <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-              <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
-            </div>
-          </article>
-          <article class="member reveal" style="--d:.2s">
-            <div class="member__avatar" style="--c1:#06b6d4;--c2:#5b8cff">VP</div>
-            <h4>Vice President</h4>
-            <p class="member__role">Operations</p>
-            <div class="member__socials">
-              <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-              <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
-            </div>
-          </article>
-          <article class="member reveal" style="--d:.3s">
-            <div class="member__avatar" style="--c1:#10b981;--c2:#06b6d4">TL</div>
-            <h4>Tech Lead</h4>
-            <p class="member__role">Technical Vertical</p>
-            <div class="member__socials">
-              <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin"></i></a>
-              <a href="#" aria-label="Email"><i data-lucide="mail"></i></a>
-            </div>
-          </article>
-        </div>
-      </div>
-    </section>
-
+    
     <!-- ============ GALLERY ============ -->
     <section class="section gallery" id="gallery">
       <div class="container">
@@ -642,43 +485,7 @@
       </div>
     </section>
 
-    <!-- ============ FAQ ============ -->
-    <section class="section faq" id="faq">
-      <div class="container container--narrow">
-        <div class="section__head reveal">
-          <span class="section__eyebrow">FAQ</span>
-          <h2 class="section__title">Questions, <span class="grad-text">answered</span></h2>
-        </div>
-
-        <div class="faq__list">
-          <details class="faq__item reveal">
-            <summary>Who can join CIE? <i data-lucide="chevron-down"></i></summary>
-            <p>Any student of MLR Institute of Technology, regardless of year or branch, can apply. We welcome curiosity over experience.</p>
-          </details>
-          <details class="faq__item reveal" style="--d:.05s">
-            <summary>Do I need prior experience? <i data-lucide="chevron-down"></i></summary>
-            <p>No. We value passion and willingness to learn over existing skills. Our onboarding and workshops will get you up to speed.</p>
-          </details>
-          <details class="faq__item reveal" style="--d:.1s">
-            <summary>How much time do I need to commit? <i data-lucide="chevron-down"></i></summary>
-            <p>Typically 4–6 hours per week, with more during events and hackathons. We work with your academic schedule.</p>
-          </details>
-          <details class="faq__item reveal" style="--d:.15s">
-            <summary>Is there a fee to join? <i data-lucide="chevron-down"></i></summary>
-            <p>No. CIE is completely free for all MLR Institute of Technology students.</p>
-          </details>
-          <details class="faq__item reveal" style="--d:.2s">
-            <summary>Can I switch domains after joining? <i data-lucide="chevron-down"></i></summary>
-            <p>Yes. We encourage exploration. You can switch domains after your first semester with your lead's approval.</p>
-          </details>
-          <details class="faq__item reveal" style="--d:.25s">
-            <summary>Does CIE help with startups? <i data-lucide="chevron-down"></i></summary>
-            <p>Absolutely. Our Startup Lab provides mentorship, resources, and connections to help you take your idea from zero to launch.</p>
-          </details>
-        </div>
-      </div>
-    </section>
-
+    
     <!-- ============ CONTACT ============ -->
     <section class="section contact" id="contact">
       <div class="container">
@@ -765,12 +572,12 @@
       </div>
 
       <div class="footer__links">
-        <h4>Programs</h4>
-        <a href="#programs">Innovation Lab</a>
-        <a href="#programs">Startup Lab</a>
-        <a href="#programs">Workshops</a>
-        <a href="#programs">Hackathons</a>
-        <a href="#programs">Mentorship</a>
+        <h4>Events</h4>
+        <a href="#events">MLRIT MUN</a>
+        <a href="#events">TEDxMLRIT</a>
+        <a href="#events">Murder Mystery</a>
+        <a href="#events">Literature Festival</a>
+        <a href="#events">Seminar Mentorship</a>
       </div>
 
       <div class="footer__links">
