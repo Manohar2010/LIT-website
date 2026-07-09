@@ -292,10 +292,6 @@ h1, h2, h3, h4 { font-family: var(--font-display); line-height: 1.15; font-weigh
   backdrop-filter: blur(20px) saturate(180%);
   border-bottom: 1px solid var(--border);
 }
-.nav.scrolled .nav__logo-box{
-    background-color: var(--grad) !important;
-    padding: 2px 15px;
-}
 
 .nav.scrolled .nav__logo-img{
     transform:scale(.94);
